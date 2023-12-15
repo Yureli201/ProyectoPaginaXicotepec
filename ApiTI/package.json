@@ -1,0 +1,31 @@
+{
+  "name": "mx.utxj.ti.evnd.fwdw.api-ti",
+  "version": "1.0.0",
+  "description": "API REST para la consulta de la informacion a la base de datos en MySQL para el proyecto integrador de la asignatura de Frameworks de Desarrollo Web, orientada a la persistencia de datos para la aplicación web",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon src/api.js"
+  },
+  "keywords": [
+    "TI",
+    "FWDW",
+    "REST",
+    "Mysql",
+    "Express",
+    "Sequelize"
+  ],
+  "author": "Yureli Martinez Martinez",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.6.5",
+    "sequelize": "^6.35.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1",
+    "nodemon": "^3.0.1"
+  }
+}
