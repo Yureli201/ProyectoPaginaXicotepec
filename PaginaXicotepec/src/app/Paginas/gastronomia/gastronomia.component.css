@@ -1,0 +1,51 @@
+
+.col-12{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.img-gastronomia {
+    height: 50vh;
+    width: 100%;
+    object-fit: cover; /* Ajusta la imagen manteniendo su proporción y cubriendo el contenedor */
+}
+
+.contenedor-imagen {
+    position: relative;
+    display: inline-block;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.352);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro con transparencia */
+    color: #fff; /* Color del texto */
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.3s ease; /* Efecto de transición suave */
+    text-align: center;
+}
+
+.contenedor-imagen:hover .overlay {
+    opacity: 1; /* Mostrar el overlay al pasar el ratón sobre la imagen */
+}
+
+.text-center{
+    font-size: 2rem;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 0.9rem ;
+}
+

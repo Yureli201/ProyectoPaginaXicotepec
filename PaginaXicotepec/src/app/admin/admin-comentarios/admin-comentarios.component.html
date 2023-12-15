@@ -1,0 +1,27 @@
+<div class="container mt-4">
+    <h2 class="card-title text-center animate__animated animate__flipInX">Administrar comentarios</h2>
+
+    <table class="col-12 table table-primary table-hover table-striped mt-4 p-0">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Mensaje</th>
+                <th scope="col">Usuario</th>
+                <th scope="col">Recurso</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let comentario of comentarios">
+                <th scope="row">{{comentario.id}}</th>
+                <td class="text-wrap">{{comentario.mensaje}}</td>
+                <td>{{comentario.usuarioID}}</td>
+                <td>{{comentario.recursoTuristicoID}}</td>
+                <td class="iconos">
+                    <a (click)="borrarComentario(comentario.id)"><fa-icon  [icon]="eliminar"></fa-icon></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

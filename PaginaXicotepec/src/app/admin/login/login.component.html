@@ -1,0 +1,19 @@
+<nav class="navbar bg bg-success text-center" *ngIf="mensajeBien">Login exitoso </nav>
+<nav class="navbar bg bg-danger text-center" *ngIf="mensajeMal">Error en el correo o la contraseña</nav>
+<div class="container-fluid">
+
+    <div class="login-container">
+        <h2 class="text-center">Iniciar sesión</h2>
+        <form>
+            Correo Electrónico:
+            <input class="form-control" [(ngModel)]="correo" type="email" id="username" name="username" required>
+
+            Contraseña:
+            <input class="form-control" [(ngModel)]="password" type="password" id="password" name="password" required>
+
+            <button type="submit" (click)="buscarUsuario()">Iniciar sesión</button>
+
+            <a  routerLink="/sign-up"><p class="text-center mt-2">Crear cuenta</p></a>
+        </form>
+    </div>
+</div>

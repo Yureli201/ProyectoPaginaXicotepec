@@ -1,0 +1,35 @@
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+h5{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 1rem ;
+    margin: 0 auto;
+}
+
+span{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 1rem ;
+}
+
+.card{
+background-color: #A7C658;
+padding-right: 0;
+padding-left: 0;
+box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.352);
+overflow: hidden;
+}
+
+.img-hotel {
+    height: 45vh;
+    width: 100%;
+    object-fit: cover;
+}

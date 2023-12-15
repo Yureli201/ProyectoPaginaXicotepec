@@ -1,0 +1,34 @@
+#menu{
+    font-family: '';
+    width: 100%;
+    min-height: 17vh;
+    background-color: #904614;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 40px;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    }
+    
+    .opcion{
+    height: 15vh;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    .opcion:hover{
+        transform: scale(0.9);
+    }
+    .opcion:hover > *{
+    text-shadow: 3px 3px 15px black,
+    1px 1px rgb(91, 2, 2);
+    }
+    
+    .icono{
+    font-size: 2rem;
+    }

@@ -1,0 +1,29 @@
+<div class="container mt-4">
+    <h2 class="card-title text-center animate__animated animate__flipInX">Administrar usuarios</h2>
+
+    <table class=" container-fluid table-striped table table-danger table-hover mt-4">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Correo electrónico</th>
+                <th scope="col">Contraseña</th>
+                <th scope="col">Fecha de nacimiento</th>
+                <th scope="col">Genero</th>
+                <th scope="col">Lugar de Procedencia</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let usuario of usuarios">
+                <th scope="row">{{usuario.id}}</th>
+                <td>{{usuario.nombreCompleto}}</td>
+                <td>{{usuario.correoElectronico}}</td>
+                <td>{{usuario.password}}</td>
+                <td>{{usuario.fechaDeNacimiento}}</td>
+                <td>{{usuario.genero}}</td>
+                <td>{{usuario.lugarProcedencia}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

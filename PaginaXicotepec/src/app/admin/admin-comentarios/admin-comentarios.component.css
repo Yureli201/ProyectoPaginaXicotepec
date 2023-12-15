@@ -1,0 +1,37 @@
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 0.9rem ;
+}
+
+h6{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 1.2rem ;
+}
+
+fa-icon{
+    font-size: 1.3rem;
+    color: red;
+}
+
+a:hover{
+    transform: scale(1.1);
+}
+
+.iconos{
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+nav{
+    color: white;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    }

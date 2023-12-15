@@ -1,0 +1,22 @@
+<div class="container mt-4 mb-4">
+    <h2 class="text-center animate__animated animate__flipInX">¿Qué puedo visitar?</h2>
+
+    <div class="row row-cols-1 row-cols-md-1 g-4 mt-4">
+        <div class="col" *ngFor="let recurso of recursos">
+            <div class="card p-3 rounded-3">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img [src]="'../../../assets/'+(recurso.imagen)" class="img-fluid rounded img-turistico" width="100%" alt="...">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">{{recurso.nombreRecurso}}</h5>
+                                <p>{{recurso.descripcion}}</p>
+                                <a [routerLink]="'/comentarios/'+ (recurso.id)"><span class="badge text-bg-dark">VER COMENTARIOS</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

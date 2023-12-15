@@ -1,0 +1,37 @@
+<div class="container text-center mt-4 mb-4">
+    <div class="container-fluid">
+        <h2 class="text-center animate__animated animate__flipInX">{{Recurso.nombreRecurso}}</h2>
+        <img width="auto" height="400" [src]="'../../../assets/'+(Recurso.imagen)">
+        <p class="mt-4"> 
+            {{Recurso.descripcion}}
+        </p>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <h6>Categoria: <strong>{{Recurso.categoria}}</strong></h6>
+            <h6>Calificacion: <strong>{{Recurso.calificacion}}</strong></h6>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <p><strong>{{Recurso.telefono}}</strong></p>
+            <p>{{Recurso.direccion}}</p>
+            <p>{{Recurso.redesSociales}}</p>
+        </div>
+    </div>
+
+    <div class="container col-10 mt-5">
+        <div class="card crear-comentario">
+            <div class="card-header w-100">
+                <h5 class="text-center">Comentarios</h5>
+            </div>
+            <form *ngIf="userId!=''" class="row p-2 formulario">
+                <h5><strong>{{usuario.id}}: </strong>{{usuario.nombreCompleto}}</h5>
+                <textarea name="mensaje" id="mensaje" cols="3" placeholder="Mensaje" [(ngModel)]="mensajeCom" required></textarea>
+                <button type="submit" class="btn btn-primary mt-2 text-center" (click)="guardarComentario(this.mensajeCom, this.userId, this.recursoID)">Publicar</button>
+            </form>
+            <div class="container-fluid mt-4 comentarios row row-cols-1 row-cols-md-3 g-4">
+                <div *ngFor="let comentario of Comentarios" class="comentario mt-4 m-2">
+                    <h5>{{comentario.usuarioID}}</h5>
+                    <p>{{comentario.mensaje}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="col-12" *ngIf="noInicio" [style.background-color]="color">
+    <app-navbar></app-navbar>
+</div>
+<div class="col-12" id="paginas">
+    <router-outlet></router-outlet>
+</div>
+<div class="col-12"  [style.background-color]="color" >
+    <app-footer></app-footer>
+</div>

@@ -1,0 +1,16 @@
+<div class="container mt-4">
+    <h2 class="text-center animate__animated animate__flipInX">Gastronomía</h2>
+    <p class="mt-4">Nuestra gastronomía es uno de los principales atractivos, ha conquistado a miles de conocedores que han tratado de volver a degustar estas exquisiteces de platillos y bebidas en otro lugar y no lo han podido lograr, y se ven obligados a regresar para completar su misión. Podemos mencionar, al legendario vino de acáchul, frutilla silvestre del mismo nombre, único de Xicotepec. Las galletas esponjadas elaboradas a base de agua, harina de trigo, sal, un poco de manteca y levadura, aquellos hornos de nuestras panaderías productoras del delicioso e inigualable marquezote, un delicioso pan hecho a base de almidón, azúcar y huevo. Para una sonrisa de dulzura se encuentra el jamoncillo dulce típico y cuyos ingredientes son: pipián y azúcar. Las deliciosas acamayas en chilpachole o al mojo de ajo, el pollo en hongo, el pascal verde o rojo, por supuesto no podemos olvidar la deliciosa y original “cecina serrana” acompañada de chile con huevo y frijolitos negros de la olla, platillo típico de nuestra tierra, y por si esto fuera poco, sería un sacrilegio no mencionar a los deliciosos, únicos y populares “molotes” uno más de los tantos platillos regionales de Xicotepec por excelencia; ya para terminar un delicioso taco de salsa de chícalas, una delicia de temporada.</p>
+
+    <div class="col-12">
+    <div class="row row-cols-1 row-cols-md-3 g-4 p-3">
+        <div class="contenedor-imagen" *ngFor="let recurso of recursos">
+            <img [src]="'../../../assets/'+(recurso.imagen)" class="img-gastronomia">
+            <div class="p-3 overlay">
+                <h2>{{recurso.nombreRecurso}}</h2>
+                <p>{{recurso.descripcion}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

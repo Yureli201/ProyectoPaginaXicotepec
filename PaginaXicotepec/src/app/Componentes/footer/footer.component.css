@@ -1,0 +1,55 @@
+.container-fluid{
+    background-color: transparent;
+    min-height: 25vh;
+    padding: 3% 5%;
+    display: flex;
+    flex-direction: row;
+}
+.imagen img{
+    width: 100%;
+    height: auto;
+}
+.imagen{
+    width: 70%;
+    background-color: #ffffff80;
+    border-radius: 20px;
+    height: auto;
+}
+
+.links {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.links p{
+margin: 0%;
+font-size: 1.1em;
+}
+fa-icon{
+font-size: 1.5rem;
+margin-right: 5px;
+}
+
+.links:hover > *{
+text-shadow: 3px 3px 15px black
+}
+
+
+
+.admin {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.admin p{
+margin: 0%;
+font-size: 1.1em;
+}
+
+.admin:hover > *{
+text-shadow: 3px 3px 15px black
+}

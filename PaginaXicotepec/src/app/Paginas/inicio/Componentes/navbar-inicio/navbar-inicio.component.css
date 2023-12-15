@@ -1,0 +1,19 @@
+#inicioLogo{
+    min-width: 100%;
+    height: 15vh;
+    background-color: #904614;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    height: 12vh;
+    width: auto;
+}
+#boton{
+    position: absolute;
+    display: flex;
+justify-content: end;
+align-items: start;
+z-index: 50;
+}

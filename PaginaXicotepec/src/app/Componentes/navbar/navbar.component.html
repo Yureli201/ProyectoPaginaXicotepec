@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid ">
+    <div class=" row row-cols-2 row-cols-md-1 g-4">
+        <img src="../../../assets/logo.png" alt="logo" routerLink="/inicio">
+        <p>Hola {{usuario.nombreCompleto}}</p>
+    </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNavDropdown">
+            <ul class="navbar-nav d-flex align-items-center justify-content-center">
+            <a class="nav-link" routerLink="/historia">Historia</a>
+            <a class="nav-link" routerLink="/gastronomia">Gastronomía</a>
+            <a class="nav-link" routerLink="/agricultura">Agricultura</a>
+            <a class="nav-link" routerLink="/ganaderia">Ganaderia</a>
+            <a class="nav-link" routerLink="/restaurantes">Restaurantes</a>
+            <a class="nav-link" routerLink="/hoteles">Hoteles</a>
+            <a class="nav-link" routerLink="/lugares-turisticos">Que visitar</a>
+            <a class="nav-link" routerLink="/festividades">Festividades</a>
+            <a class="nav-link" routerLink="/acerca-de">Acerca de</a>
+            <a class="icono" *ngIf="userId != '' && userId!='1'" [routerLink]="'/editar-usuario/'+ (this.userId)">
+            <fa-icon  [icon]="User"></fa-icon>
+            </a>
+
+            <li class="nav-item dropdown dropstart" *ngIf="userId=='1'">
+                <a class="nav-link dropdown-toggle icono" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <fa-icon [icon]="User"></fa-icon>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" routerLink="/administrar-usuarios">Administrar usuarios</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" routerLink="/administrar-recursos">Administrar recursos</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" routerLink="/administrar-comentarios">Administrar comentarios</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" [routerLink]="'/editar-usuario/'+(this.userId)">Perfil</a></li>
+                </ul>
+            </li>
+                </ul>
+        </div>
+    </div>
+</nav>

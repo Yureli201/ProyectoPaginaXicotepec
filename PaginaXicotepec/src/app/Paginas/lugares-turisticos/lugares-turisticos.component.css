@@ -1,0 +1,44 @@
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+h5{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 1.2rem ;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 0.9rem ;
+}
+
+span{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 1rem ;
+}
+
+.card{
+background-color: #F9C8E2;
+display: flex;
+align-items: center;
+box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.352);
+overflow: hidden;
+}
+
+.col-md-6{
+    display: flex;
+    align-items: center;
+}
+.col-md-3{
+    display: flex;
+    align-items: center;
+}
+
+.img-turistico {
+    height: 45vh;
+    width: 100%;
+    object-fit: cover; /* Ajusta la imagen manteniendo su proporción y cubriendo el contenedor */
+}

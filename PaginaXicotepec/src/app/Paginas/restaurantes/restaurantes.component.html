@@ -1,0 +1,16 @@
+<div class="container mt-4">
+  <h2 class="text-center animate__animated animate__flipInX">Restaurantes</h2>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4 mt-4 mb-4">
+      <div class="col" *ngFor="let recurso of recursos">
+        <div class="card">
+          <img [src]="'../../../assets/' + (recurso.imagen)" class="card-img-top img-restaurante" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">{{recurso.nombreRecurso}}</h5>
+            <p class="card-text pl-3 pr-3">{{recurso.descripcion}}</p>
+            <a [routerLink]="'/comentarios/'+ (recurso.id)" ><span class="badge text-bg-dark">VER COMENTARIOS</span></a>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>

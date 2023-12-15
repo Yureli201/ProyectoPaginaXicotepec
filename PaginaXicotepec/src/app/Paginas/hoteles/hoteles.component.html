@@ -1,0 +1,25 @@
+<div class="container mt-4 mb-4">
+    <h2 class="text-center animate__animated animate__flipInX">Hoteles</h2>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4 mt-4">
+        <div class="col" *ngFor="let recurso of recursos">
+            <div class="card m-2">
+                <div class="row g-0">
+                    <div class="col-md-7">
+                        <div class="card-body">
+                            <h5 class="card-title">{{recurso.nombreRecurso}}</h5>
+                                <p class="card-text">{{recurso.descripcion}}</p>
+                                <p *ngIf="recurso.telefono!=null" class="card-text"><strong>Tel:</strong>{{recurso.telefono}}</p>
+                                <p *ngIf="recurso.correo!=null" class="card-text"><strong>Email:</strong>{{recurso.correo}}</p>
+                                <p *ngIf="recurso.direccion!=null" class="card-text"><strong>Direccion:</strong>{{recurso.direccion}}</p>
+                            <a [routerLink]="'/comentarios/'+ (recurso.id)" ><span class="badge text-bg-dark">VER COMENTARIOS</span></a>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <img [src]="'../../../assets/'+(recurso.imagen)" class="img-fluid rounded-end img-hotel" width="100%" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

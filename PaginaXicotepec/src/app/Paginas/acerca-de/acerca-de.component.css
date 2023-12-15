@@ -1,0 +1,39 @@
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+h5{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 1.2rem ;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 0.9rem ;
+}
+
+span{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 1rem ;
+}
+
+
+#equipo{
+height: 55vh;
+object-fit: cover;
+object-position: top;
+}
+
+#logo{
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+    object-position: center;
+}
+#logos{
+padding: 10px;
+background-color: #904614;
+}

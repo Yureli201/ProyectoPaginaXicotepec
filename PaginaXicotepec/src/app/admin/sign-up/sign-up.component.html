@@ -1,0 +1,33 @@
+<nav class="navbar bg bg-success text-center" *ngIf="mensajeBien">Login exitoso </nav>
+<div class="container-fluid mt-4 mb-4">
+<div class="signup-container">
+    <h2 class="text-center">Crear cuenta</h2>
+    <form>
+      Nombre:
+      <input type="text" id="nombreCompleto" [(ngModel)]="Usuario.nombreCompleto" name="nombreCompleto" required>
+
+      Correo electrónico
+      <input type="email" id="correoElectronico"  [(ngModel)]="Usuario.correoElectronico" name="correoElectronico" required>
+
+      Contraseña
+      <input type="password" id="password" [(ngModel)]="Usuario.password"  name="password"  required>
+
+      Fecha de Nacimiento:
+      <input type="date" id="fechaDeNacimiento" placeholder="Fecha de nacimiento" [(ngModel)]="Usuario.fechaDeNacimiento" name="fechaDeNacimiento" required>
+
+      Género:
+      <select class="form-select mb-3"  [(ngModel)]="Usuario.genero" name="genero" required>
+        <option value="M" selected>Masculino</option>
+        <option value="F">Femenino</option>
+        <option value="N/B">No binario</option>
+      </select>
+
+      Lugar de procedencia
+      <input type="text" id="lugarProcedencia" [(ngModel)]="Usuario.lugarProcedencia" name="lugarProcedencia" required>
+
+      <button type="submit" (click)="guardarUsuario()">Crear Cuenta</button>
+      <a  routerLink="/login"><p class="text-center mt-2">Iniciar Sesión</p></a>
+
+    </form>
+  </div>
+</div>
